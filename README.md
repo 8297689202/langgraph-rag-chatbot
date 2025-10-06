@@ -12,15 +12,17 @@ This project implements an agentic AI pipeline that:
 - Provides LLM observability through LangSmith
 
 ## Architecture
+```
 User Query → Intent Classification (LangGraph) → Route Decision
-↓
-┌───────────────┴────────────────┐
-↓                                ↓
-Weather Path                      Document Path
-↓                                ↓
-Extract City → Fetch API        Vector Search (Qdrant)
-↓                                ↓
-└────────→ LLM Response ←────────┘
+                                                   ↓
+                                   ┌───────────────┴────────────────┐
+                                   ↓                                ↓
+                            Weather Path                      Document Path
+                                   ↓                                ↓
+                          Extract City → Fetch API        Vector Search (Qdrant)
+                                   ↓                                ↓
+                                   └────────→ LLM Response ←────────┘
+```
 
 ### Key Components
 
@@ -112,6 +114,7 @@ pytest tests/test_agent.py -v
 pytest tests/ --cov=. --cov-report=html
 
 ## Project Structure
+```
 project/
 ├── agent.py              # LangGraph agent pipeline
 ├── weather.py            # Weather API integration
@@ -127,6 +130,7 @@ project/
 ├── .env.example        # Environment template
 ├── .gitignore          # Git ignore rules
 └── README.md           # This file
+```    
 
 # LangSmith Evaluation
 LangSmith is integrated for full observability of LLM calls and agent decisions. View traces at: https://smith.langchain.com/
