@@ -1,0 +1,54 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Virtual environment
+venv/
+env/
+neura/
+
+# Database
+*.db
+chat_history.db
+
+# Temporary files
+temp_*.pdf
+*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+.pytest_cache/
+htmlcov/
+.coverage
+
+# LangSmith logs
+langsmith/
+
+.env
+__pycache__/
+*.py[cod]
+*.db
+temp_*.pdf
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+chathistroy.db
+
+Input/

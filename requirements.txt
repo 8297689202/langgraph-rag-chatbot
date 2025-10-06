@@ -1,0 +1,13 @@
+langchain==0.3.27
+langchain-openai
+langchain-community
+langchain-qdrant
+qdrant-client
+pypdf
+flashrank
+python-dotenv
+langgraph
+streamlit
+pytest 
+pytest-mock
+requests
