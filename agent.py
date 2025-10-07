@@ -304,21 +304,3 @@ if __name__ == "__main__":
     agent.rag_tool.load_pdf("sample.pdf")
     db = ChatDatabase()  
     test_session = "test_session_001"
-
-    
-    # Test 1: Weather query
-    # print("\n--- Test 1: Weather Query ---")
-    # result = agent.run("What's the humidity  in Delhi ?")
-    # print(f"\nAnswer: {result['final_answer']}")
-    
-    # # Test 2: Document query (requires RAG to have loaded a PDF)
-    # print("\n--- Question 1 ---")
-    # history = db.get_session_history(test_session)
-    # result = agent.run("how many encoders are used in this architecture ?", session_id=test_session, chat_history=history)
-    # print(f"Answer: {result['final_answer']}")
-
-    # # # Test 3: Follow-up with history
-    # print("\n--- Question 3 ---")
-    # history = db.get_session_history(test_session)  # Load updated history
-    # result = agent.run("what is the dimension of k,q and v vectors in the paper?", session_id=test_session, chat_history=history)
-    # print(f"Answer: {result['final_answer']}")
