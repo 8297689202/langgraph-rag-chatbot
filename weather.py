@@ -57,7 +57,7 @@ if __name__ == "__main__":
     city_name = "Delhi"
     try:
         result = weather.get_weather(city_name)
-        print(f"Weather in {result['city']}:")  # Use the city from result
+        print(f"Weather in {result['city']}:")
         print(f"Temperature: {result['temperature']}°C")
         print(f"Feels like: {result['feels_like']}°C")
         print(f"Conditions: {result['description']}")
